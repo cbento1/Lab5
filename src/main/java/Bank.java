@@ -8,18 +8,31 @@
  * @see <a href="https://cs125.cs.illinois.edu/lab/5/">Lab 5 Description</a>
  */
 public class Bank {
-
+    /**
+     *
+     */
     private String bankName;
 
+    /**
+     *
+     * @param nameInput .
+     */
     public void setBankName(final String nameInput) {
         bankName = nameInput;
     }
 
+    /**
+     *
+     */
     public Bank() {
         this.bankName = "Unknown";
     }
 
-    public Bank(String nameInput) {
+    /**
+     *
+     * @param nameInput .
+     */
+    public Bank(final String nameInput) {
         this.bankName = nameInput;
     }
 
@@ -38,6 +51,12 @@ public class Bank {
         /*
          * Implement this function
          */
+        double change = bankAccount.getAccountBalance() - amount;
+        if (amount < 0.0 || change < 0.0) {
+            return false;
+        }
+        bankAccount.setAccountBalance(change);
+        return true;
     }
 
     /**
@@ -54,6 +73,12 @@ public class Bank {
         /*
          * Implement this function
          */
+        double change = bankAccount.getAccountBalance() + amount;
+        if (amount < 0.0) {
+            return false;
+        }
+        bankAccount.setAccountBalance(change);
+        return true;
     }
 
     /**
@@ -70,9 +95,14 @@ public class Bank {
 
     public boolean transferMoney(final BankAccount source, final BankAccount destination,
             final double amount) {
-        /*
-         * Implement this function
-         */
+        if (amount < 0.0 || amount > source.getAccountBalance()) {
+            return false;
+        }
+        double changeSource = source.getAccountBalance() - amount;
+        double changeDestination = destination.getAccountBalance() + amount;
+        source.setAccountBalance(changeSource);
+        destination.setAccountBalance(changeDestination);
+
     }
 
     /**

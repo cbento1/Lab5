@@ -68,6 +68,7 @@ public class BankAccount {
      * @param accountCategory .
      */
     public BankAccount(final String name, final BankAccountType accountCategory) {
+
         this.ownerName = name;
         this.accountType = accountCategory;
 
@@ -133,21 +134,21 @@ public class BankAccount {
      *
      * @param inputNumber .
      */
-    private void setAccountNumber(final int inputNumber) {
+    public void setAccountNumber(final int inputNumber) {
         this.accountNumber = inputNumber;
     }
 
     /**
      *
      */
-    private void setAccountNumber() {
+    public void setAccountNumber() {
         this.accountNumber = rnd.nextInt();
     }
     /**
      *
      * @param inputType .
      */
-    private void setAccountType(final BankAccountType inputType) {
+    public void setAccountType(final BankAccountType inputType) {
         this.accountType = inputType;
     }
 
@@ -155,7 +156,7 @@ public class BankAccount {
      *
      * @param inputBalance .
      */
-    private void setAccountBalance(final double inputBalance) {
+    public void setAccountBalance(final double inputBalance) {
         this.accountBalance = inputBalance;
     }
 
@@ -163,7 +164,7 @@ public class BankAccount {
      *
      * @param inputOwner .
      */
-    private void setOwnerName(final String inputOwner) {
+    public void setOwnerName(final String inputOwner) {
         this.ownerName = inputOwner;
     }
 
@@ -171,7 +172,7 @@ public class BankAccount {
      *
      * @param inputRate .
      */
-    private void setInterestRate(final double inputRate) {
+    public void setInterestRate(final double inputRate) {
         this.interestRate = inputRate;
     }
 
@@ -179,7 +180,7 @@ public class BankAccount {
      *
      * @param inputEarned .
      */
-    private void setInterestEarned(final double inputEarned) {
+    public void setInterestEarned(final double inputEarned) {
         this.interestEarned = inputEarned;
     }
 

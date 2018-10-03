@@ -67,40 +67,48 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="956" />
+          <entry key="java" value="1357" />
+          <entry key="txt" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="956" />
+          <entry key="JAVA" value="1357" />
+          <entry key="PLAIN_TEXT" value="12" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Bank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="456">
+              <caret line="103" column="55" selection-start-line="103" selection-start-column="55" selection-end-line="103" selection-end-column="55" />
               <folding>
-                <element signature="e#430#431#0" expanded="true" />
-                <element signature="e#474#475#0" expanded="true" />
-                <element signature="e#510#511#0" expanded="true" />
-                <element signature="e#543#544#0" expanded="true" />
-                <element signature="e#576#577#0" expanded="true" />
-                <element signature="e#617#618#0" expanded="true" />
+                <element signature="docComment;field#bankName#0;class#Bank#0" />
+                <element signature="docComment;method#setBankName#0;class#Bank#0" />
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#556#557#0" expanded="true" />
+                <element signature="docComment;method#Bank#0;class#Bank#0" />
+                <element signature="e#603#604#0" expanded="true" />
+                <element signature="e#644#645#0" expanded="true" />
+                <element signature="docComment;method#Bank#1;class#Bank#0" />
+                <element signature="e#681#682#0" expanded="true" />
+                <element signature="e#722#723#0" expanded="true" />
+                <element signature="docComment;method#withdrawMoney#0;class#Bank#0" />
+                <element signature="docComment;method#depositMoney#0;class#Bank#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/BankAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="2">
+              <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
               <folding>
                 <element signature="docComment;field#CHECKINGS#0;class#BankAccountType#0;class#BankAccount#0" />
                 <element signature="docComment;field#SAVINGS#0;class#BankAccountType#0;class#BankAccount#0" />
@@ -113,6 +121,7 @@
                 <element signature="docComment;field#ownerName#0;class#BankAccount#0" />
                 <element signature="docComment;field#interestRate#0;class#BankAccount#0" />
                 <element signature="docComment;field#interestEarned#0;class#BankAccount#0" />
+                <element signature="docComment;method#BankAccount#0;class#BankAccount#0" />
                 <element signature="docComment;method#getAccountNumber#0;class#BankAccount#0" />
                 <element signature="e#1503#1504#0" expanded="true" />
                 <element signature="e#1544#1545#0" expanded="true" />
@@ -499,8 +508,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Bank.java" />
         <option value="$PROJECT_DIR$/src/main/java/BankAccount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bank.java" />
       </list>
     </option>
   </component>
@@ -566,6 +575,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538602594653" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -621,6 +631,14 @@
       <option name="presentableId" value="Default" />
       <updated>1538343685467</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1538601918221</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538601918222</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -662,26 +680,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/BankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        <state relative-caret-position="2">
+          <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
           <folding>
             <element signature="docComment;field#CHECKINGS#0;class#BankAccountType#0;class#BankAccount#0" />
             <element signature="docComment;field#SAVINGS#0;class#BankAccountType#0;class#BankAccount#0" />
@@ -694,6 +701,7 @@
             <element signature="docComment;field#ownerName#0;class#BankAccount#0" />
             <element signature="docComment;field#interestRate#0;class#BankAccount#0" />
             <element signature="docComment;field#interestEarned#0;class#BankAccount#0" />
+            <element signature="docComment;method#BankAccount#0;class#BankAccount#0" />
             <element signature="docComment;method#getAccountNumber#0;class#BankAccount#0" />
             <element signature="e#1503#1504#0" expanded="true" />
             <element signature="e#1544#1545#0" expanded="true" />
@@ -733,6 +741,27 @@
             <element signature="docComment;method#setInterestEarned#0;class#BankAccount#0" />
             <element signature="e#3007#3008#0" expanded="true" />
             <element signature="e#3056#3057#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="103" column="55" selection-start-line="103" selection-start-column="55" selection-end-line="103" selection-end-column="55" />
+          <folding>
+            <element signature="docComment;field#bankName#0;class#Bank#0" />
+            <element signature="docComment;method#setBankName#0;class#Bank#0" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="docComment;method#Bank#0;class#Bank#0" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="docComment;method#Bank#1;class#Bank#0" />
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="docComment;method#withdrawMoney#0;class#Bank#0" />
+            <element signature="docComment;method#depositMoney#0;class#Bank#0" />
           </folding>
         </state>
       </provider>
