@@ -9,11 +9,20 @@
  */
 public class Bank {
 
-    public String bankName;
+    private String bankName;
+
+    public void setBankName(final String nameInput) {
+        bankName = nameInput;
+    }
 
     public Bank() {
-        bankName = "Illini Bank";
+        this.bankName = "Unknown";
     }
+
+    public Bank(String nameInput) {
+        this.bankName = nameInput;
+    }
+
 
     /**
      * Withdraw money from an account.

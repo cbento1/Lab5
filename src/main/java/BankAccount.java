@@ -12,27 +12,178 @@ public class BankAccount {
     /*
      * You may want to use this to distinguish between different kinds of accounts.
      */
-    public enum BankAccountType {
+
+
+    private enum BankAccountType {
+        /**
+         *
+         */
         CHECKINGS,
+        /**
+         *
+         */
         SAVINGS,
+        /**
+         *
+         */
         STUDENT,
+        /**
+         *
+         */
         WORKPLACE
     }
 
+    /**
+     *
+     */
+    private static Random rnd = new Random();
+    /**
+     *
+     */
     private int accountNumber;
-    public BankAccountType accountType;
+    /**
+     *
+     */
+    private BankAccountType accountType;
+    /**
+     *
+     */
     private double accountBalance;
+    /**
+     *
+     */
     private String ownerName;
-    public double interestRate;
+    /**
+     *
+     */
+    private double interestRate;
+    /**
+     *
+     */
     private double interestEarned;
 
+    /**
+     *
+     * @param name .
+     * @param accountCategory .
+     */
     public BankAccount(final String name, final BankAccountType accountCategory) {
-        /*
-         * Implement this function
-         */
+        this.ownerName = name;
+        this.accountType = accountCategory;
+
+        this.accountNumber = 0;
+        this.accountBalance = 0.0;
+        this.interestRate = 0.0;
+        this.interestEarned = 0.0;
     }
 
     /*
      * Implement getters and setters as appropriate for private variables.
      */
+
+    /**
+     *
+     * @return .
+     */
+    public int getAccountNumber() {
+        return this.accountNumber;
+    }
+
+    /**
+     *
+     * @return .
+     */
+    public BankAccountType getBankAccountType() {
+        return this.accountType;
+    }
+
+    /**
+     *
+     * @return .
+     */
+    public double getAccountBalance() {
+        return this.accountBalance;
+    }
+
+    /**
+     *
+     * @return .
+     */
+    public String getOwnerName() {
+        return this.ownerName;
+    }
+
+    /**
+     *
+     * @return .
+     */
+    public double getInterestRate() {
+        return interestRate;
+    }
+
+    /**
+     *
+     * @return .
+     */
+    public double getInterestEarned() {
+        return interestEarned;
+    }
+
+    /**
+     *
+     * @param inputNumber .
+     */
+    private void setAccountNumber(final int inputNumber) {
+        this.accountNumber = inputNumber;
+    }
+
+    /**
+     *
+     */
+    private void setAccountNumber() {
+        this.accountNumber = rnd.nextInt();
+    }
+    /**
+     *
+     * @param inputType .
+     */
+    private void setAccountType(final BankAccountType inputType) {
+        this.accountType = inputType;
+    }
+
+    /**
+     *
+     * @param inputBalance .
+     */
+    private void setAccountBalance(final double inputBalance) {
+        this.accountBalance = inputBalance;
+    }
+
+    /**
+     *
+     * @param inputOwner .
+     */
+    private void setOwnerName(final String inputOwner) {
+        this.ownerName = inputOwner;
+    }
+
+    /**
+     *
+     * @param inputRate .
+     */
+    private void setInterestRate(final double inputRate) {
+        this.interestRate = inputRate;
+    }
+
+    /**
+     *
+     * @param inputEarned .
+     */
+    private void setInterestEarned(final double inputEarned) {
+        this.interestEarned = inputEarned;
+    }
+
+
+
+
 }
